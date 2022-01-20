@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+/***
+Grid
+***/
+.container {
+  max-width: 1280px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*********** Home **********/
+.homepage .content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 120px;
+  flex: 0 0 100%;
+}
+.top-two {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.homepage h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.homepage h2 span {
+  color: #ee4c7c;
+  font-size: 40px;
+}
+.homepage h3 {
+  font-size: 36px;
+  font-weight: normal;
+  color: #9a1750;
+  margin: 40px 0 20px 0;
+}
+.homepage h4 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.icon-profile {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.icon-profile svg {
+  font-size: 40px;
+  color: black;
+}
+.icon-profile .facebook svg {
+  font-size: 35px;
+}
+.icon-profile .linkedin svg {
+  font-size: 39px;
+}
+.icon-profile a:hover svg {
+  color: #ee4c7c;
+}
+
+.bottom-button {
+  display: flex;
+  gap: 90px;
+}
+
+.bottom-button a {
+  padding: 20px 60px;
+  background-color: black;
   color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(238, 76, 124, 0.2);
 }
-
-.App-link {
-  color: #61dafb;
+.bottom-button a:hover {
+  background-color: #ee4c7c;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.photo img {
+  border-radius: 50%;
+  border: 2px solid rgb(238, 238, 238);
+  box-shadow: 0 4px 8px rgba(238, 76, 124, 0.2);
+}
+.homepage .right-section h4 {
+  color: #5d001e;
+  font-weight: normal;
 }

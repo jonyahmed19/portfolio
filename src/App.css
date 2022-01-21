@@ -77,6 +77,10 @@ Grid
 }
 .bottom-button a:hover {
   background-color: #ee4c7c;
+  color: white;
+}
+a:hover {
+  color: #ee4c7c;
 }
 .photo img {
   border-radius: 50%;
@@ -86,4 +90,155 @@ Grid
 .homepage .right-section h4 {
   color: #5d001e;
   font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+
+/*********** other pages ********/
+.header-area {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+.nav-right {
+  display: flex;
+  font-size: 20px;
+  flex: 2 1 auto;
+  gap: 80px;
+  margin-top: 18px;
+}
+div.nav-right a {
+  color: #000;
+  border-bottom: 2px solid transparent;
+}
+.nav-right a:hover,
+.nav-right .active {
+  border-bottom: 2px solid #ee4c7c;
+}
+.logo-area {
+  flex: 0 0 auto;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 60px;
+  color: black;
+}
+.logo {
+  margin-top: 40px;
+}
+
+.logo a:hover {
+  color: #ee4c7c;
+}
+.title {
+  margin-top: 100px;
+}
+.title h2 {
+  text-transform: uppercase;
+  font-size: 34px;
+  color: rgb(100, 100, 100);
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+.title .border {
+  height: 2px;
+  width: 80px;
+  background-color: #ee4c7c;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 70px;
+}
+.filter button {
+  background: black;
+  color: #fff;
+  border: 0;
+  padding: 20px 45px;
+  font-size: 20px;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(238, 76, 124, 0.2);
+  text-transform: uppercase;
+}
+.filter button:hover {
+  background-color: #ee4c7c;
+}
+
+.card-list {
+  margin-top: 70px;
+  display: flex;
+  gap: 40px;
+}
+.card {
+  border-radius: 7px;
+  background-color: #e3afbc;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.card-list a:hover .info h4 {
+  text-decoration: underline;
+}
+.card-list h4 {
+  color: #000;
+}
+
+.form-area form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+.form-area input,
+.form-area textarea {
+  border-radius: 9px;
+  font-size: 18px;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+.form-area label {
+  margin-top: 26px;
+}
+input[type="submit"] {
+  margin-top: 30px;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: 0 4px 8px rgba(238, 76, 124, 0.2);
+}
+input[type="submit"]:hover {
+  background-color: rgba(238, 76, 124);
+}
+.form-area .error {
+  border-color: #ee4c7c;
+}
+
+.blog-container {
+  max-width: 720px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 50px;
+  color: #000;
+}
+.blog-container .title {
+  margin-bottom: 30px;
+}
+.tech-details p {
+  margin: 10px 0;
 }

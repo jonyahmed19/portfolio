@@ -7,7 +7,7 @@ Grid
 }
 
 /*********** Home **********/
-/* .homepage .content {
+.homepage .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,10 +93,10 @@ a:hover {
 }
 a {
   text-decoration: none;
-} */
+}
 
 /*********** other pages ********/
-/* .header-area {
+.header-area {
   display: flex;
   align-items: center;
   gap: 120px;
@@ -241,4 +241,4 @@ input[type="submit"]:hover {
 }
 .tech-details p {
   margin: 10px 0;
-} */
+}

@@ -1,12 +1,8 @@
-/***
-Grid
-***/
 .container {
   max-width: 1280px;
   margin: auto;
 }
 
-/*********** Home **********/
 .homepage .content {
   display: flex;
   justify-content: center;
@@ -95,7 +91,6 @@ a {
   text-decoration: none;
 }
 
-/*********** other pages ********/
 .header-area {
   display: flex;
   align-items: center;

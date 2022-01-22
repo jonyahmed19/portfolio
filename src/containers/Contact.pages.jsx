@@ -18,39 +18,41 @@ const Contact = () => {
         <Title />
         <div className="container">
           <div className="form-area">
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <label htmlFor="name">
-                Full Name:<span>*</span>
-              </label>
-              <input
-                {...register("name", { required: true, maxLength: 20 })}
-                id="name"
-                name="name"
-                type="text"
-                className={errors.name && "error"}
-              />
-              <label htmlFor="mail">
-                Email:<span>*</span>
-              </label>
-              <input
-                {...register("mail", { required: true })}
-                id="mail"
-                name="mail"
-                type="mail"
-                className={errors.mail && "error"}
-              />
-              <label htmlFor="message">
-                Message:<span>*</span>
-              </label>
-              <textarea
-                {...register("message", { required: true })}
-                rows="5"
-                id="message"
-                name="message"
-                className={errors.message && "error"}
-              />
-              <input type="submit" value="Send" />
-            </form>
+            {
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <label htmlFor="name">
+                  Full Name:<span>*</span>
+                </label>
+                <input
+                  {...register("name", { required: true, maxLength: 20 })}
+                  id="name"
+                  name="name"
+                  type="text"
+                  className={errors.name && "error"}
+                />
+                <label htmlFor="mail">
+                  Email:<span>*</span>
+                </label>
+                <input
+                  {...register("mail", { required: true })}
+                  id="mail"
+                  name="mail"
+                  type="mail"
+                  className={errors.mail && "error"}
+                />
+                <label htmlFor="message">
+                  Message:<span>*</span>
+                </label>
+                <textarea
+                  {...register("message", { required: true })}
+                  rows="5"
+                  id="message"
+                  name="message"
+                  className={errors.message && "error"}
+                />
+                <input type="submit" value="Send" />
+              </form>
+            }
           </div>
         </div>
       </div>

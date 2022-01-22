@@ -7,7 +7,7 @@ Grid
 }
 
 /*********** Home **********/
-.homepage .content {
+/* .homepage .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@ a:hover {
 }
 a {
   text-decoration: none;
-}
+} */
 
 /*********** other pages ********/
 /* .header-area {

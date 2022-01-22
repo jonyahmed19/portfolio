@@ -11,8 +11,7 @@
 # production
 /build
 /bak
-/dist
-/.cache
+
 
 # misc
 .DS_Store

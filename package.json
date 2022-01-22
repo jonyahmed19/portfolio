@@ -7,9 +7,8 @@
     "node": "16.13.2"
   },
   "scripts": {
-    "start": "parcel public/index.html",
-    "build": "parcel build public/index.html --no-minify --public-url ./",
-    "postinstall": "yarn build"
+    "start": "parcel src/index.html -- open",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

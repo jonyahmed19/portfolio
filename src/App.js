@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import "./app.scss";
 import Home from "./containers/Home.pages";
 import Contact from "./containers/Contact.pages";
@@ -15,8 +15,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/works" element={<Works />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:postId" element={<Single />} />
         <Route path="/works/:workId" element={<Single />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

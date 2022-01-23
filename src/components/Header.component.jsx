@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation, matchPath } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
+import cv from "../assets/cv.pdf";
 const Header = ({ front }) => {
   const { pathname } = useLocation();
   const checkPath = function (arg) {
@@ -23,9 +24,9 @@ const Header = ({ front }) => {
       <Link className={checkPath("/contact") ? "active" : "link"} to="/contact">
         Contact
       </Link>
-      <Link className={checkPath("/blog/*") ? "active" : "link"} to="/blog">
-        Blog
-      </Link>
+      <a target="_blank" className={"link"} href={cv}>
+        CV
+      </a>
     </>
   );
 

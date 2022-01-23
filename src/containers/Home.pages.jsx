@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../components/Button.component";
 import SocialIcon from "../components/SocialIcon.component";
 import jony from "../assets/jony2.png";
+import cv from "../assets/cv.pdf";
 import {
   FaGithub,
   FaLinkedinIn,
@@ -51,7 +52,9 @@ const Home = () => {
           <div className="bottom-button">
             <Button send="/works" text={"Works"} />
             <Button send="/contact" text={"Contact"} />
-            <Button send="/blog" text={"Blog"} />
+            <a target="_blank" href={cv}>
+              CV
+            </a>
           </div>
         </div>
       </div>

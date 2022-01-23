@@ -8,6 +8,9 @@ Grid
 }
 
 /*********** Home **********/
+.homepage .container {
+  margin-bottom: 0;
+}
 .homepage .content {
   display: flex;
   justify-content: center;
@@ -238,6 +241,7 @@ input[type="submit"]:hover {
   gap: 25px;
   margin-bottom: 50px;
   color: #000;
+  padding: 0 30px;
 }
 .blog-container .title {
   margin-bottom: 30px;
@@ -247,6 +251,9 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .container {
+    margin-bottom: 70px;
+  }
   .content .top-two {
     flex-direction: column;
     margin-top: 80px;
@@ -304,7 +311,28 @@ input[type="submit"]:hover {
     font-size: 20px;
   }
   .homepage .content {
-    gap: 80px;
+    gap: 60px;
+  }
+  .title {
+    margin-top: 60px;
+  }
+  .filter {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .card {
+    flex-direction: column;
+    gap: 0px;
+    max-width: 360px;
+    margin: auto;
+  }
+  .card img {
+    max-width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 7px;
+  }
+  .content .bottom-button {
+    gap: 40px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -336,5 +364,14 @@ input[type="submit"]:hover {
   }
   .icon-profile .facebook svg {
     font-size: 29px;
+  }
+  .blog-container .title {
+    margin-top: 0;
+  }
+  .blog-container .title h2 {
+    font-size: 22px;
+  }
+  .singlepage .container {
+    margin-bottom: 40px;
   }
 }

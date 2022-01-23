@@ -2,14 +2,32 @@ import React from "react";
 import Header from "../components/Header.component";
 import Title from "../components/Title.component";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm();
-  const onSubmit = (d) => console.log(JSON.stringify(d));
+  const onSubmit = (data) => {
+    emailjs
+      .send(
+        "service_6e93k72",
+        "template_mxeywmw",
+        data,
+        "user_pr2ku1hwE27YPJsKgIQII"
+      )
+      .then(
+        (response) => {
+          console.log("Success", response.status, response.text);
+        },
+        (err) => {
+          console.log("Failed", err);
+        }
+      );
+  };
 
   return (
     <div className="contactpage">

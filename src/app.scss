@@ -1,8 +1,12 @@
+/***
+Grid
+***/
 .container {
   max-width: 1280px;
   margin: auto;
 }
 
+/*********** Home **********/
 .homepage .content {
   display: flex;
   justify-content: center;
@@ -91,6 +95,7 @@ a {
   text-decoration: none;
 }
 
+/*********** other pages ********/
 .header-area {
   display: flex;
   align-items: center;
@@ -236,4 +241,74 @@ input[type="submit"]:hover {
 }
 .tech-details p {
   margin: 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .content .top-two {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .content .bottom-button {
+    gap: 60px;
+  }
+  .bottom-button a {
+    padding: 15px 40px;
+  }
+  .homepage .content {
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bottom-button a {
+    padding: 16px 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .homepage h2 span {
+    font-size: 36px;
+  }
+  .homepage h2 {
+    font-size: 28px;
+  }
+  .homepage h3 {
+    font-size: 28px;
+    margin-top: 25px;
+  }
+  .homepage h4 {
+    font-size: 20px;
+  }
+  .homepage .content {
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .content .bottom-button {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .homepage h2 {
+    font-size: 18px;
+  }
+  .homepage h2 span {
+    font-size: 24px;
+  }
+  .homepage h3 {
+    font-size: 22px;
+  }
+  .homepage h4 {
+    font-size: 18px;
+  }
+  .icon-profile svg {
+    font-size: 30px;
+  }
+  .icon-profile {
+    gap: 35px;
+  }
+  .icon-profile .linkedin svg {
+    font-size: 32px;
+  }
+  .icon-profile .facebook svg {
+    font-size: 29px;
+  }
 }

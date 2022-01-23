@@ -4,6 +4,7 @@ Grid
 .container {
   max-width: 1280px;
   margin: auto;
+  width: 90%;
 }
 
 /*********** Home **********/
@@ -172,6 +173,8 @@ div.nav-right a {
   margin-top: 70px;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
+  flex: 3;
 }
 .card {
   border-radius: 7px;
@@ -256,6 +259,29 @@ input[type="submit"]:hover {
   }
   .homepage .content {
     height: auto;
+  }
+  .card-list {
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .card img {
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 0;
+    max-width: 200px;
+  }
+  .title h2 {
+    font-size: 28px;
+  }
+  .filter button {
+    padding: 15px 35px;
+    font-size: 18px;
+    gap: 50px;
+  }
+  .filter {
+    gap: 50px;
   }
 }
 @media screen and (max-width: 600px) {

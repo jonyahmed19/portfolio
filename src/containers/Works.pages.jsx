@@ -45,7 +45,6 @@ const Works = () => {
       return works;
     }
   };
-  console.log("filterValue", filterValue());
 
   return (
     <div className="workspage">

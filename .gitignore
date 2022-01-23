@@ -10,9 +10,6 @@
 
 # production
 /build
-/bak
-/dist
-/.cache
 
 
 # misc

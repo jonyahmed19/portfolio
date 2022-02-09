@@ -16,7 +16,7 @@ const Card = ({ data, works }) => {
         <div className="info">
           <h4>{name}</h4>
 
-          <p>{tags}</p>
+          <p>{tags.join(",")}</p>
         </div>
       </div>
     </Link>

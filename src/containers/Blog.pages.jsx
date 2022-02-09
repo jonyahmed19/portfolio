@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header.component";
 import Title from "../components/Title.component";
 import work from "../assets/work1.png";
-import featured from "../assets/featured.png";
+import featured from "../assets/featured1.png";
 import Card from "../components/Card.component";
 
 const posts = [

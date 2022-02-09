@@ -181,7 +181,7 @@ div.nav-right a {
 }
 .card {
   border-radius: 7px;
-  background-color: #e3afbc;
+  background-color: #fff9c4;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -249,7 +249,19 @@ input[type="submit"]:hover {
 .tech-details p {
   margin: 10px 0;
 }
-
+.tech-details {
+  padding: 0 2rem;
+  background-color: #fff9c4;
+}
+.gotoBtn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 2rem;
+}
+.gotoBtn:hover {
+  color: #fff;
+  background-color: #ee4c7c;
+}
 @media screen and (max-width: 900px) {
   .container {
     margin-bottom: 70px;
